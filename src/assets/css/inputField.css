@@ -1,0 +1,9 @@
+.inputFieldDiv{
+    margin-bottom: 20px;
+}
+
+.inputFieldDiv .errMessage{
+    font-size: 14px;
+    font-style: italic;
+    color: red;
+}

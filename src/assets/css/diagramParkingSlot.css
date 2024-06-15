@@ -1,0 +1,236 @@
+.containerDiagramP {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    min-height: 100vh;
+    position: relative;
+}
+
+.wrapperCategory {
+    flex: 40%;
+}
+.listCategory{
+    margin-left: 15px;
+    margin-top: 25px;
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 350px;
+    align-items: center;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+.listCategory::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.itemCategory {
+    width: 100px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem 1.4rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    text-align: center;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.itemCategory_title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 15%);
+}
+
+.listCategoryArrow{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.buttonScrollArrow{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    color: hsl(0, 0%, 15%);
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    cursor: pointer;
+    transition: .5s;
+}
+.buttonScrollArrow:hover {
+    background-color: #000;
+}
+
+.buttonScrollArrow:hover .buttonScrollIconsArrow {
+    color: #fff;
+}
+
+.wrapperParking {
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.containerArea {
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+.containerArea::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.AreaName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.TextAreaName {
+    border-radius: 8px;
+    border: 2px solid;
+    padding: 10px;
+    color: #000;
+    font-weight: bold;
+}
+
+.viewAll {
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+}
+
+.viewLeft {
+    flex: 2;
+}
+
+.viewCenter {
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+}
+
+.viewRight {
+    flex: 2;
+}
+
+.viewParking {
+    padding: 20px;
+    border: 1px solid #000;
+    display: flex;
+}
+
+.slotName {
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageAuto {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageAuto:hover .imageOverlay {
+    opacity: 1;
+}
+
+.imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.imageText {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.viewName {
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.viewDirect {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-scroll-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttonScroll {
+    outline: none;
+    border: 2px solid #000;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: 400ms;
+}
+
+.buttonScroll:hover {
+    background-color: #000;
+}
+
+.buttonScroll:hover .buttonScrollIcons {
+    color: #fff;
+}

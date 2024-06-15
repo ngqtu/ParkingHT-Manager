@@ -1,0 +1,129 @@
+.login{
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(to right, #0b8793,#ffffff);
+}
+
+.formLoginBox{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.loginBox {
+    width: 340px;
+    backdrop-filter: blur(2rem);
+    background-color: rgba(0,0,0,0.5);
+    padding: 50px 30px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 50px 200px #555;
+}
+.loginBox::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,0.30);
+    inset: 0;
+    transform: rotate(-6deg);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.loginBox .loginlogoTitle{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.loginBox .loginlogoTitle img{
+    width: 32px;
+    height: 32px;
+}
+
+.loginBox .loginlogoTitle p{
+    font-weight: bold;
+    font-style: italic;
+    color: #02aab0;
+}
+
+.loginBox .loginDes p{
+    font-weight: 500;
+    color: #fff;
+}
+.loginBox .loginDes span{
+    color: #fff;
+    font-size: small;
+    font-weight: 300;
+}
+.loginBox .loginDes{
+    margin-bottom: 20px;
+}
+
+.loginBox .group{
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginBox .group input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 20px;
+    color: #fff;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+.loginBox .group .iconEye{
+    color: #777;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.loginBox .forgotPass{
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: small;
+    transition: transform 0.5s;
+}
+
+.loginBox .forgotPass a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.loginBox .forgotPass:hover{
+    transform: translateY(5px);
+}
+
+.loginBox .signIn button{
+    background-color: #02aab0;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 6px 10px #02aab0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.loginBox .signIn button:active{
+    transform: translateY(5px);
+    box-shadow: none;
+}

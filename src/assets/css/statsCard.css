@@ -1,0 +1,76 @@
+.StatsCard{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.StatsCardItem{
+    padding: 1rem; 
+    width: 50%; 
+    margin: 10px 10px 20px 0;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0 0 15px -10px rgba(0,0,0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0, 0.75);
+    background-color: #A1E3D8CC;
+}
+.StatsCardItem.lightGreenColor{
+    background-color: #FFDAB9CC;
+}
+
+.StatsCardTitle{
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.StatsCardMoneyContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.StatsCardWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.StatsCardIconItem{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.StatsCardMoney{
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
+}
+
+.StatsCardMoneyRate{
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem; 
+    font-weight: 600;
+}
+
+.StatsCardIcon{
+    border: 1px solid #00c853;
+    border-radius: 50%;
+    color: #00c853;
+}
+
+.StatsCardIcon.negative{
+    border: 1px solid #e53935;
+    color: #e53935;
+}
+
+.StatsCardIconText{
+    margin-left: 8px;
+    color: #00c853;
+}
+
+.StatsCardIconText.negative{
+    color: #e53935;
+}
